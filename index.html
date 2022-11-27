@@ -15,7 +15,7 @@
         validInput(number);
         
         function validInput(number){
-            return (number == 0 || number == null)? alert("invalid input"): fizzBuzz(number); 
+            return (number == 0 || number == null || isNaN(number) != false)? alert("invalid input"): fizzBuzz(number); 
         function fizzBuzz(number){
             for(var i = 1; i <= number; i++){
                
