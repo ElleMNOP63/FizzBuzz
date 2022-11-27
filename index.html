@@ -12,7 +12,6 @@
 
     <script>
         let number = prompt("Number?" );
-        console.log(number);
         validInput(number);
         
         function validInput(number){
@@ -20,11 +19,14 @@
         function fizzBuzz(number){
             for(var i = 1; i <= number; i++){
                
-                let answer = (i % 3 == 0)? "Fizz": 
+                let answer = (i % 15 == 0) ? "FizzBuzz":
+                (i % 3 == 0)? "Fizz": 
                 (i %5 == 0) ? "Buzz": 
-                (i % 15 == 0) ? "FizzBuzz":
                  i;
                 console.log(answer); 
+               
+               
+               
                 /* let answer;
                if(i%3 == 0){
                     answer = 'Fizz';
