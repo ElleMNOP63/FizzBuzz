@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz</title>
+</head>
+<body>
+    <input type="text" id="text">
+    <button>Play</button>
+
+    <script>
+        let number = prompt("Number?" );
+        console.log(number);
+        validInput(number);
+        
+        function validInput(number){
+            return (number == 0 || number == null)? alert("invalid input"): fizzBuzz(number); 
+        function fizzBuzz(number){
+            for(var i = 1; i <= number; i++){
+               
+                let answer = (i % 3 == 0)? "Fizz": 
+                (i %5 == 0) ? "Buzz": 
+                (i % 15 == 0) ? "FizzBuzz":
+                 i;
+                console.log(answer); 
+                /* let answer;
+               if(i%3 == 0){
+                    answer = 'Fizz';
+                }
+                else if(i%5 == 0){
+                    answer = 'Buzz';
+                }
+                else if(i% 15 == 0){
+                    answer = 'FizzBuzz';
+                }
+                else{
+                    answer = i;
+                }
+                console.log(answer);*/
+            }
+        }
+        
+        
+        }
+    </script>
+    
+</body>
+</html>
